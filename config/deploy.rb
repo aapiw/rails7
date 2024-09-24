@@ -1,14 +1,14 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.19.1"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "rails7"
+set :repo_url, "git@github.com:aapiw/rails7.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-# Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+# Default deploy_to directory is /var/www/rails7
+# set :deploy_to, "/var/www/rails7"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -37,3 +37,6 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+# 34.0.130.40
+# deploy

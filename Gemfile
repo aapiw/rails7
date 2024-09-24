@@ -68,6 +68,8 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.2', require: false
 end
 
+gem 'dotenv'
+
 gem "watermelon_db_sync", path: "../watermelon_db_sync"
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]

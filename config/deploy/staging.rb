@@ -59,3 +59,11 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+
+set :stage, :staging
+set :environment, "staging"
+server '34.0.130.40', user: 'deploy', roles: %w{app web db}
+set :linked_files, %w{ config/database.yml .env config/secrets.yml config/master.key}
+set :deploy_to, '/home/deploy/rails7'
+set :branch, "staging"
